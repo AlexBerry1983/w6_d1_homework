@@ -10,4 +10,16 @@ class Library {
   public String getName() {
     return this.name;
   }
+
+  public int bookCount() {
+    int count = 0;
+    for (Book book : pile) {
+      if (book != null) {
+        count++;
+      }
+    }
+  return count;
+  }
+
+
 }

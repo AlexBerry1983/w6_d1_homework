@@ -15,4 +15,9 @@ public class LibraryTest {
   public void hasName() {
     assertEquals("Alexandria", library.getName());
   }
+
+  @Test
+  public void pileStartsEmpty(){
+    assertEquals(0, library.bookCount());
+  }
 }
