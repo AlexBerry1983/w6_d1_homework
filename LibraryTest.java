@@ -17,7 +17,15 @@ public class LibraryTest {
   }
 
   @Test
-  public void pileStartsEmpty(){
+  public void pileStartsEmpty() {
     assertEquals(0, library.bookCount());
   }
+
+  @Test
+  public void canAdd() {
+    library.add(book);
+    assertEquals(1, library.bookCount());
+  }
+
+
 }

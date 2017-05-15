@@ -21,5 +21,9 @@ class Library {
   return count;
   }
 
+  public void add(Book book) {
+    int index = bookCount();
+    pile[index] = book;
+  }
 
 }
