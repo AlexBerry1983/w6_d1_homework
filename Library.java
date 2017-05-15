@@ -26,4 +26,7 @@ class Library {
     pile[index] = book;
   }
 
+  public boolean isPileFull() {
+    return bookCount() == pile.length;
+  }
 }

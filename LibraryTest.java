@@ -27,5 +27,12 @@ public class LibraryTest {
     assertEquals(1, library.bookCount());
   }
 
+  @Test
+  public void isPileFull() {
+    for (int i = 0; i < 5; i++) {
+      library.add(book);
+    }
+    assertEquals(true, library.isPileFull());
+  }
 
 }
