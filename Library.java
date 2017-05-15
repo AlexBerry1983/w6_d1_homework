@@ -1,10 +1,10 @@
 class Library {
   private String name;
-  private Book[] pile;
+  private Book[] stock;
 
   public Library(String name) {
     this.name = name;
-    this.pile = new Book[5];
+    this.stock = new Book[5];
   }
 
   public String getName() {
@@ -13,7 +13,7 @@ class Library {
 
   public int bookCount() {
     int count = 0;
-    for (Book book : pile) {
+    for (Book book : stock) {
       if (book != null) {
         count++;
       }
@@ -23,10 +23,10 @@ class Library {
 
   public void add(Book book) {
     int index = bookCount();
-    pile[index] = book;
+    stock[index] = book;
   }
 
-  public boolean isPileFull() {
-    return bookCount() == pile.length;
+  public boolean isStockFull() {
+    return bookCount() == stock.length;
   }
 }

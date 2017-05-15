@@ -17,7 +17,7 @@ public class LibraryTest {
   }
 
   @Test
-  public void pileStartsEmpty() {
+  public void stockStartsEmpty() {
     assertEquals(0, library.bookCount());
   }
 
@@ -28,11 +28,11 @@ public class LibraryTest {
   }
 
   @Test
-  public void isPileFull() {
+  public void isStockFull() {
     for (int i = 0; i < 5; i++) {
       library.add(book);
     }
-    assertEquals(true, library.isPileFull());
+    assertEquals(true, library.isStockFull());
   }
 
 }
